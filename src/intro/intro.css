@@ -1,0 +1,80 @@
+#intro{
+    height: calc(100vh - 5rem);
+    width: 99.5vw;
+    max-width: 250rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+.bg{
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+    z-index: -1;
+    object-fit: cover;
+    height: 80vh;
+}
+.introContent{
+    height: 100vh;
+    width: 100vh;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello{
+    font-size: 1.65rem;
+    font-weight: 100S;
+}
+.introName{
+    color: yellow;
+}
+.intoPara{
+    font-size: medium;
+    font-weight: 1;
+    letter-spacing: 1px;
+}
+
+.btn{
+    background: white;
+    margin: 2rem 0;
+    padding: 0.65rem 1rem;
+    border: none;
+    border-radius: 1.5rem;
+}
+.btnimg{
+    object-fit: cover;
+    margin: 0 0.30rem;
+    height: 1.2rem;
+}
+@media screen and (max-width:840px) {
+    .bg{
+        right: -9vw;
+    }
+    .introContent{
+        font-size:  4.5vw;
+    }
+    .hello{
+        font-size: 4vw;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .bg{
+        right: -20vw;
+    }
+    .introContent{
+        font-size:  7vw;
+    }
+    .hello{
+        font-size: 10vw;
+    }
+    .intoPara{
+        font-size: small;
+    }
+    
+}
